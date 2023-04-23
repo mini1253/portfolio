@@ -28,27 +28,16 @@ function horizontalIndicator(e) {
 
 
 // 스크롤 내리면 tooltip이 사라지게
-// 스크롤 이벤트를 감지하여 btn_tooltip 요소 숨기는 함수 호출
-var prevScrollPos = window.pageYOffset; // 이전 스크롤 위치 저장
-
-// 스크롤 이벤트를 감지하여 btn_tooltip 요소를 표시/숨김
-window.addEventListener("scroll", function() {
-  var tooltip = document.querySelector(".btn_tooltip");
-  var qr = document.querySelector(".qr");
-  var currentScrollPos = window.pageYOffset; // 현재 스크롤 위치
-  // 현재 스크롤 위치와 이전 스크롤 위치를 비교하여 스크롤 방향 판단
-  if (prevScrollPos > currentScrollPos) {
-    // 스크롤이 올라갈 때 btn_tooltip 요소를 표시
-    tooltip.style.display = "block";
+$(".btn_tooltip").hide();
+$(window).scroll(function () {
+  //html의 scrollTop을 계산해서 변수 scTop에 저장
+  let scTop = $("html").scrollTop(); 
+  if (scTop < 50) {
+    $(".btn_tooltip").fadeIn(500);
   } else {
-    // 스크롤이 내려갈 때 qr 요소가 100vh 아래로 내려갔을 때 btn_tooltip 요소를 숨김
-    if (currentScrollPos > (qr.offsetTop + qr.offsetHeight - window.innerHeight)) {
-      tooltip.style.display = "none";
-    }
+    $(".btn_tooltip").fadeOut(500);
   }
-  prevScrollPos = currentScrollPos; // 이전 스크롤 위치 업데이트
 });
-
 
 
 
@@ -64,6 +53,19 @@ $(".clone").slick({
 
 
 
+// Top 버튼
+$('.scroll_top').hide();
+$(window).scroll(function () {
+  let scTop = $('html').scrollTop(); //html의 scrollTop을 계산해서 변수 scTop에 저장
+  if (scTop > 50) {
+    $('.scroll_top').fadeIn(500);
+  } else {
+    $('.scroll_top').fadeOut(500);
+  }
+});
 
 
-//top 버튼
+// 스크롤을 맨 위로 올려주는 코드
+$('.scroll_top').click(function () { 
+  $('html').animate({ scrollTop: 0 }, 500);
+});
