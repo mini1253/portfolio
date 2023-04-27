@@ -127,7 +127,7 @@ a {cursor: url(../img/cursor2.png), auto}
   font-family: 'Noto Serif Hebrew', serif;
   font-size: 5em; 
   position: absolute;
-  left: 82.2%;
+  left: 73%;
   bottom: 35%;
   z-index: 1000;
   animation: opacity 2s 0.9s linear both;
@@ -174,11 +174,12 @@ a {cursor: url(../img/cursor2.png), auto}
   }
 }
 /* qr */
-.qr{
-  width: 100%; 
+.qr{ 
+  width: 100%;
   position: fixed; 
   bottom: 1.5%;
   z-index: 100;
+  left: 5%;
 }
 .qr img{
   width: 7.5em;
@@ -219,22 +220,22 @@ a {cursor: url(../img/cursor2.png), auto}
 /* profile 페이지 */
 .profile_pg{
   width: 100%; 
-  height: 100vh; 
+  height: 950px; 
 } 
 .profile{
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
 }
 .avatar{
-  width: 45%;
+  width: 50%;
   margin-right: 20px;
 }
 .avatar img{
   width: 100%; 
 }
 .about{
-  width: 55%;
+  width: 60%;
 }
 .about_title{
   font-size: 2em;
@@ -310,12 +311,11 @@ a {cursor: url(../img/cursor2.png), auto}
 
 /* web 페이지 */
 .web_pg{
-  width: 100%; 
-  height: 800px;
+  width: 100%;
   margin-top: 50px;
+  height: 800px; 
 }
-.web_wrap{ 
-  height: 100%;
+.web_wrap{
   margin: 0 auto;
 }
 .por_title{
@@ -325,7 +325,7 @@ a {cursor: url(../img/cursor2.png), auto}
   font-size: 35px;
 }
 .project{
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
@@ -333,15 +333,15 @@ a {cursor: url(../img/cursor2.png), auto}
   align-items: center;
 }
 .project_img{
-  width: 40%;
+  width: 100%;
 }
 .project_img img{
-  width: 90%;
+  width: 100%;
   background-size: cover;
   background-position: center top;
 }
 .project_contens{
-  width: 50%;
+  width: 100%;
   padding-left: 20px;
 }
 .project_contens dl{
@@ -349,13 +349,13 @@ a {cursor: url(../img/cursor2.png), auto}
   flex-flow: row wrap;
 }
 .project_contens dl dt{
-  width: 25%;
+  width: 30%;
   padding: 10px 0;
   font-weight: 700;
   color: #000;
 }
 .project_contens dl dd{
-  width: 75%;
+  width: 70%;
   padding: 10px 0;
   line-height: 1.5
 }
@@ -376,6 +376,7 @@ a {cursor: url(../img/cursor2.png), auto}
 /* 클론코딩 페이지 */
 .clone_pg{
   width: 100%;
+  height: 800px; 
   margin-top: 50px;
   position: relative;
   text-align: center; 
@@ -445,6 +446,7 @@ a {cursor: url(../img/cursor2.png), auto}
 /* 디자인 페이지 */
 .design_pg{
   width: 100%;
+  height: 1500px;
   margin-top: 100px;
 }
 .design_wrap{
@@ -490,10 +492,10 @@ a {cursor: url(../img/cursor2.png), auto}
   margin-bottom: 70px;
 }
 .snscard>a{
-  width: 33.3%;
+  width: 30%;
 }
 .snscard_wrap .snscard img{ 
-  width: 350px;
+  width: 100%;
   transform:scale(1.0);
   transition: transform 0.5s;
 }
@@ -505,7 +507,7 @@ a {cursor: url(../img/cursor2.png), auto}
 
 /* 포터영역 */
 .footer_pg{
-  width: 100%; 
+  width: 100%;
   background-color: #3c4046;
   padding: 50px 0 40px 0;
 }
@@ -515,4 +517,392 @@ a {cursor: url(../img/cursor2.png), auto}
 }
 .footer h1{
   margin-bottom: 40px; 
+}
+
+
+ 
+/* 미디어쿼리 */
+@media all and (max-width: 480px) {
+  /* 모바일2 사이즈 */
+  .mymenu > li{
+    font-size: 1em;
+  }
+  .intro_pg{
+    height: 400px;
+  }
+  .intro{
+    top: 200px;
+  }
+  .intro_txt strong{ 
+    bottom: 0%;
+    font-size: 1.8em;
+  }
+  .intro_txt p{ 
+    font-size: 1.8em;
+  }
+  .scroll_down{ 
+    bottom: 25%;
+    width: 40px;
+    height: 60px;
+    bottom: -90%;
+  }
+  .qr img{
+    width: 4em;
+    height: 4em;
+  }
+  .btn_tooltip{
+    padding: 0.65rem 0.8rem; 
+    margin-left: 80px; 
+  }
+  .btn_tooltip{
+    font-size: 10px;
+    top: 80%;
+  }
+  
+  .profile_pg{
+    height: 550px;
+  } 
+  .profile{
+    width: 95%; 
+  }
+  .avatar{
+    width: 90%;
+  }
+  .about{
+    width: 100%;
+  }
+  .about_title{
+    font-size: 1.1em; 
+    margin-bottom: 0.9rem;
+  }
+  .about_text p{
+    font-size: 0.7em; 
+    margin-bottom: 0.5rem;
+  }
+  .resume{
+    width: 120px; 
+    font-size: 0.9rem;
+    line-height: 3rem;
+  }
+  .favivoite{
+    height: 14rem;
+    margin-bottom: 10vh;
+  }
+  .keywords img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+  }
+  .keywords p{ 
+    font-size: 1.5rem; 
+  } 
+  .keywords:nth-child(2) { 
+    top: 3.5rem;
+  }
+  
+  .web_pg{
+    height: 1100px;
+  }
+  .project{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .project_img{
+    width: 100%;
+  }
+  .project_img img{
+    width: 100%;
+  }
+  .project_contens{
+    width: 100%;
+    padding-left: 20px;
+  }
+  .project_contens dl dt{ 
+    padding: 5px 0;
+    font-size: 0.85rem;
+  }
+  .project_contens dl dd{
+    padding: 5px 0; 
+    font-size: 0.85rem;
+  }
+  .link{
+    margin: 20px 0 30px 0;
+  }
+  .link a{ 
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .clone_pg{
+    height: 1000px;
+  }
+  .clone_project{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clone_project_list{
+    width: 100%;
+  }
+  
+  .design_pg{
+    height: 1000px;
+  }
+  .design_wrap{
+    width: 90%;
+  }
+
+  .footer_pg{
+    padding: 20px 0 20px 0;
+  }
+  .footer h1{
+    font-size: 20PX;
+    margin-bottom: 15px;
+  }
+  .footer p{
+    font-size: 0.7em;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px){
+  /* 모바일1 사이즈 */ 
+  .intro{
+    top:150px;
+  }
+  .intro_txt strong{ 
+    bottom: 0%;
+    font-size: 3em;
+  }
+  .intro_txt p{ 
+    font-size: 3.2em;
+  }
+  .scroll_down{ 
+    bottom: -50%; 
+  }
+  .qr img{
+    width: 5em;
+    height: 5em;
+  }
+  .btn_tooltip{
+    padding: 0.85rem 1rem; 
+    margin-left: 100px; 
+  }
+  .btn_tooltip{
+    font-size: 12px;
+    top: 80%;
+  }
+  
+  .profile_pg{
+    height: 650px;
+  } 
+  .profile{
+    width: 95%; 
+  }
+  .avatar{
+    width: 85%;
+  }
+  .about{
+    width: 100%;
+  }
+  .about_title{
+    font-size: 1.5em; 
+    margin-bottom: 1.3rem;
+  }
+  .about_text p{
+    font-size: 0.9em; 
+    margin-bottom: 0.7rem;
+  }
+  .resume{ 
+    width: 100px; 
+    font-size: 0.9rem;
+    line-height: 3rem; 
+  }
+  .favivoite{
+    height: 14rem;
+    margin-bottom: 3vh;
+  }
+  .keywords img{
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+  }
+  .keywords p{ 
+    font-size: 2rem; 
+  } 
+  .keywords:nth-child(2) { 
+    top: 5rem;
+  }
+  
+  .web_pg{
+    height: 1000px;
+  }
+  .project{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .project{
+    width: 90%;
+  }
+  .project_img{
+    width: 45%;
+  }
+  .project_img img{
+    width: 100%;
+  }
+  .project_contens{
+    width: 55%;
+    padding-left: 20px;
+  }
+  .project_contens dl dt{ 
+    padding: 5px 0;
+    font-size: 0.85rem;
+  }
+  .project_contens dl dd{
+    padding: 5px 0; 
+    font-size: 0.85rem;
+  }
+  .link{
+    margin: 20px 0 30px 0;
+  }
+  .link a{ 
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .clone_pg{
+    height: 1000px;
+  }
+  .clone_project{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clone_project_list{
+    width: 100%;
+  }
+  
+  .design_pg{
+    height: 1150px;
+  }
+  .design_wrap{
+    width: 90%;
+  }
+
+  .footer_pg{
+    padding: 20px 0 20px 0;
+  }
+  .footer h1{
+    font-size: 25PX;
+    margin-bottom: 20px;
+  }
+  .footer p{
+    font-size: 0.7em;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  /* 태블릿 사이즈 */
+  .intro_txt strong{ 
+    bottom: 0%;
+    font-size: 3.7em;
+  }
+  .intro_txt p{ 
+    font-size: 3.5em;
+  }
+  .scroll_down{ 
+    bottom: -40%; 
+  }
+  .qr img{
+    width: 6em;
+    height: 6em;
+  }
+  .btn_tooltip{
+    padding: 1rem 1.3rem; 
+    margin-left: 110px; 
+  }
+  .btn_tooltip{
+    font-size: 12px;
+    top: 80%;
+  }
+
+  .profile_pg{
+    height: 750px;
+  } 
+  .profile{
+    width: 80%; 
+  }
+  .avatar{
+    width: 70%;
+  }
+  .about{
+    width: 100%;
+  }
+  .about_title{
+    font-size: 1.7em; 
+    margin-bottom: 2rem;
+  }
+  .about_text p{
+    font-size: 1em; 
+    margin-bottom: 1rem;
+  }
+  .resume{
+    width: 150px; 
+    font-size: 1rem;
+    line-height: 3.5rem; 
+  }
+  .favivoite{
+    height: 14rem;
+    margin-bottom: 10vh;
+  }
+  .keywords img{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+  }
+  .keywords p{ 
+    font-size: 3rem; 
+  } 
+  .keywords:nth-child(2) { 
+    top: 6rem;
+  }
+  
+  .web_pg{
+    height: 750px;
+  }
+  .project{
+    width: 90%;
+  }
+  .project img{
+    width: 100%;
+  }
+  .clone_pg{
+    height: 700px;
+  }
+  .clone_project{
+    width: 90%;
+  }
+  
+  .design_pg{
+    height: 1300px;
+  }
+  .design_wrap{
+    width: 90%;
+  }
+
+  .footer_pg{
+    padding: 30px 0 20px 0;
+  }
+  .footer h1{
+    font-size: 27PX;
+  }
+  .footer p{
+    font-size: 0.8em;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  /* pc 사이즈 */
+  
 }
