@@ -37,3 +37,24 @@ window.addEventListener("scroll", function() {
   }
   prevScrollPos = currentScrollPos; // 이전 스크롤 위치 업데이트
 });
+
+
+
+
+//top_btn
+$(".scroll_top").hide();
+$(window).on('scroll', function() {
+  var scTop = $(window).scrollTop();
+
+  if (scTop > 50) {
+    $('.scroll_top').fadeIn(500);
+  } else {
+    $('.scroll_top').fadeOut(500);
+  }
+});
+// 스크롤을 맨 위로 올려주는 코드
+var scrollBtn = document.getElementsByClassName("scroll_top")[0];
+scrollBtn.addEventListener("click", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
