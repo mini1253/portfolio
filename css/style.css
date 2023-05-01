@@ -68,28 +68,26 @@ a {cursor: url(../img/cursor2.png), auto}
   background: #fff;
   z-index: 100;
 }
-.mymenu{
+.mymenu {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.mymenu > li{
+.mymenu > li {
   width: 120px;
   height: 50px;
   line-height: 50px;
   font-size: 1.2em;
 } 
-#horizontal-underline{
+#horizontal-underline {
   position: absolute;
   width: 0;
   background: #0034ad;
-  top:0;
+  top: 0;
   left: 0;
   height: 3px; 
-  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
-  transition: all 0.3s ;
+  transition: all 0.3s;
 }
-
 
 /* intro 페이지 */
 .intro_pg{
@@ -99,9 +97,9 @@ a {cursor: url(../img/cursor2.png), auto}
   overflow: hidden; 
 }
 .intro_wrap{
+  left: 17%; 
   width: 65%;
   position: absolute;
-  left: 17%; 
   top: 12%;
   margin-bottom: 50px;
 } 
@@ -125,10 +123,10 @@ a {cursor: url(../img/cursor2.png), auto}
 }
 .intro_txt strong{ 
   font-family: 'Noto Serif Hebrew', serif;
-  font-size: 4.8em; 
+  font-size: 4.7em; 
   position: absolute;
-  left: 73%;
-  bottom: 35%;
+  left: 75%;
+  bottom: 3%;
   z-index: 1000;
   animation: opacity 2s 0.9s linear both;
 }
@@ -144,7 +142,7 @@ a {cursor: url(../img/cursor2.png), auto}
   height: 64px;
   left : 50%;
   transform: translate(-50%, -50%);
-  bottom: -25%;
+  bottom: -27%;
   border: 2px solid #000;
   border-radius: 50px;
 }
@@ -382,7 +380,7 @@ a {cursor: url(../img/cursor2.png), auto}
   text-align: center; 
 }
 .clone_project{
-  width: 60%;
+  width: 70%;
   display: flex; 
   flex-wrap: wrap;
   justify-content: space-between;
@@ -530,6 +528,7 @@ a {cursor: url(../img/cursor2.png), auto}
 
 .scroll_top img{
   width: 50px;
+  height: 50px;
 }
 
  
@@ -542,20 +541,24 @@ a {cursor: url(../img/cursor2.png), auto}
   .intro_pg{
     height: 400px;
   }
+  .intro_wrap{
+    left: 15%; 
+  }
   .intro{
     top: 200px;
   }
   .intro_txt strong{ 
     bottom: 0%;
     font-size: 1.8em;
+    left: 67%;
   }
   .intro_txt p{ 
     font-size: 1.8em;
   }
   .scroll_down{ 
     bottom: 25%;
-    width: 40px;
-    height: 60px;
+    width: 30px;
+    height: 45px;
     bottom: -90%;
   }
   .qr img{
@@ -571,6 +574,9 @@ a {cursor: url(../img/cursor2.png), auto}
     top: 80%;
   }
   
+  .por_title{
+    font-size: 25px;
+  }
   .profile_pg{
     height: 550px;
   } 
@@ -595,6 +601,7 @@ a {cursor: url(../img/cursor2.png), auto}
     width: 120px; 
     font-size: 0.9rem;
     line-height: 3rem;
+    left: 32%;
   }
   .favivoite{
     height: 14rem;
@@ -647,7 +654,7 @@ a {cursor: url(../img/cursor2.png), auto}
   }
 
   .clone_pg{
-    height: 1000px;
+    height: 1050px;
   }
   .clone_project{
     width: 90%;
@@ -657,12 +664,18 @@ a {cursor: url(../img/cursor2.png), auto}
   .clone_project_list{
     width: 100%;
   }
+  .clone_project_list:nth-child(2n) { 
+    transform: translateY(0);
+  } 
   
   .design_pg{
-    height: 1000px;
+    height: 3200px;
   }
   .design_wrap{
     width: 90%;
+  }
+  .snscard>a{
+    width: 99%;
   }
 
   .footer_pg{
@@ -680,17 +693,18 @@ a {cursor: url(../img/cursor2.png), auto}
 @media all and (min-width: 481px) and (max-width: 767px){
   /* 모바일1 사이즈 */ 
   .intro{
-    top:150px;
+    top: 150px;
   }
   .intro_txt strong{ 
     bottom: 0%;
     font-size: 3em;
+    left: 68%;
   }
   .intro_txt p{ 
     font-size: 3.2em;
   }
   .scroll_down{ 
-    bottom: -50%; 
+    bottom: -70%; 
   }
   .qr img{
     width: 5em;
@@ -705,8 +719,11 @@ a {cursor: url(../img/cursor2.png), auto}
     top: 80%;
   }
   
+  .por_title{
+    font-size: 25px;
+  }
   .profile_pg{
-    height: 650px;
+    height: 700px;
   } 
   .profile{
     width: 95%; 
@@ -728,7 +745,8 @@ a {cursor: url(../img/cursor2.png), auto}
   .resume{ 
     width: 100px; 
     font-size: 0.9rem;
-    line-height: 3rem; 
+    line-height: 3rem;
+    left: 40%;
   }
   .favivoite{
     height: 14rem;
@@ -747,7 +765,7 @@ a {cursor: url(../img/cursor2.png), auto}
   }
   
   .web_pg{
-    height: 1000px;
+    height: 1400px;
   }
   .project{
     width: 90%;
@@ -758,33 +776,34 @@ a {cursor: url(../img/cursor2.png), auto}
     width: 90%;
   }
   .project_img{
-    width: 45%;
+    width: 100%;
   }
   .project_img img{
     width: 100%;
   }
   .project_contens{
-    width: 55%;
+    width: 90%;
     padding-left: 20px;
   }
   .project_contens dl dt{ 
-    padding: 5px 0;
-    font-size: 0.85rem;
+    padding: 10px 0;
+    font-size: 1rem;
   }
   .project_contens dl dd{
-    padding: 5px 0; 
-    font-size: 0.85rem;
+    padding: 10px 0; 
+    font-size: 1rem;
   }
   .link{
-    margin: 20px 0 30px 0;
+    margin: 20px 30px 30px 30px;
+    justify-content: space-around;
   }
   .link a{ 
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 1em;
+    padding: 10px 13px;
   }
 
   .clone_pg{
-    height: 1000px;
+    height: 1300px;
   }
   .clone_project{
     width: 90%;
@@ -794,16 +813,22 @@ a {cursor: url(../img/cursor2.png), auto}
   .clone_project_list{
     width: 100%;
   }
+  .clone_project_list:nth-child(2n) { 
+    transform: translateY(0);
+  } 
   
   .design_pg{
-    height: 1150px;
+    height: 1730px;
   }
   .design_wrap{
     width: 90%;
   }
+  .snscard>a{
+    width: 49%;
+  }
 
   .footer_pg{
-    padding: 20px 0 20px 0;
+    padding: 20px 0 25px 0;
   }
   .footer h1{
     font-size: 25PX;
@@ -819,6 +844,7 @@ a {cursor: url(../img/cursor2.png), auto}
   .intro_txt strong{ 
     bottom: 0%;
     font-size: 3.7em;
+    left: 68%;
   }
   .intro_txt p{ 
     font-size: 3.5em;
@@ -862,7 +888,8 @@ a {cursor: url(../img/cursor2.png), auto}
   .resume{
     width: 150px; 
     font-size: 1rem;
-    line-height: 3.5rem; 
+    line-height: 3.5rem;
+    left: 43%;
   }
   .favivoite{
     height: 14rem;
@@ -895,6 +922,9 @@ a {cursor: url(../img/cursor2.png), auto}
   .clone_project{
     width: 90%;
   }
+  .clone_project_list:nth-child(2n) { 
+    transform: translateY(0);
+  } 
   
   .design_pg{
     height: 1300px;
