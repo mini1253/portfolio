@@ -125,7 +125,7 @@ a {cursor: url(../img/cursor2.png), auto}
   font-family: 'Noto Serif Hebrew', serif;
   font-size: 4.7em; 
   position: absolute;
-  left: 75%;
+  left: 80%;
   bottom: 3%;
   z-index: 1000;
   animation: opacity 2s 0.9s linear both;
@@ -218,22 +218,24 @@ a {cursor: url(../img/cursor2.png), auto}
 /* profile 페이지 */
 .profile_pg{
   width: 100%; 
-  height: 950px; 
+  height: 1050px; 
 } 
 .profile{
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
 }
 .avatar{
-  width: 50%;
+  width: 45%;
   margin-right: 20px;
+  max-width: 470px;
 }
 .avatar img{
   width: 100%; 
 }
 .about{
-  width: 60%;
+  width: 45%;
 }
 .about_title{
   font-size: 2em;
@@ -242,7 +244,7 @@ a {cursor: url(../img/cursor2.png), auto}
 }
 .about_text p{
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 300;
   margin-bottom: 1.2rem;
 }
@@ -311,7 +313,7 @@ a {cursor: url(../img/cursor2.png), auto}
 .web_pg{
   width: 100%;
   margin-top: 50px;
-  height: 800px; 
+  height: 1000px; 
 }
 .web_wrap{
   margin: 0 auto;
@@ -327,11 +329,11 @@ a {cursor: url(../img/cursor2.png), auto}
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .project_img{
-  width: 100%;
+  width: 45%;
 }
 .project_img img{
   width: 100%;
@@ -339,7 +341,7 @@ a {cursor: url(../img/cursor2.png), auto}
   background-position: center top;
 }
 .project_contens{
-  width: 100%;
+  width: 45%;
   padding-left: 20px;
 }
 .project_contens dl{
@@ -366,7 +368,7 @@ a {cursor: url(../img/cursor2.png), auto}
   background: #002882; 
   color: #fff;
   border-radius: 7px; 
-  margin-right: 15px;
+  margin-right: 20px;
   padding: 10px 12px;
 }
 
@@ -374,7 +376,7 @@ a {cursor: url(../img/cursor2.png), auto}
 /* 클론코딩 페이지 */
 .clone_pg{
   width: 100%;
-  height: 720px; 
+  height: 950px; 
   margin-top: 50px;
   position: relative;
   text-align: center; 
@@ -387,8 +389,7 @@ a {cursor: url(../img/cursor2.png), auto}
   margin: 0 auto;
 }
 .clone_project_list{
-  width: 49%; 
-  max-width: 500px;
+  width: 49%;
   margin-bottom: 9vh;
   background-color: #fff;
   box-shadow: 5px 5px 14px rgba(55, 55, 55, 0.1);
@@ -444,7 +445,7 @@ a {cursor: url(../img/cursor2.png), auto}
 /* 디자인 페이지 */
 .design_pg{
   width: 100%;
-  height: 1400px;
+  height: 1600px;
   margin-top: 100px;
 }
 .design_wrap{
@@ -562,8 +563,8 @@ a {cursor: url(../img/cursor2.png), auto}
     bottom: -90%;
   }
   .qr img{
-    width: 4em;
-    height: 4em;
+    width: 3.5em;
+    height: 3.5em;
   }
   .btn_tooltip{
     padding: 0.65rem 0.8rem; 
@@ -692,6 +693,9 @@ a {cursor: url(../img/cursor2.png), auto}
 
 @media all and (min-width: 481px) and (max-width: 767px){
   /* 모바일1 사이즈 */ 
+  .intro_pg{
+    height: 550px;
+  }
   .intro{
     top: 150px;
   }
@@ -707,8 +711,8 @@ a {cursor: url(../img/cursor2.png), auto}
     bottom: -70%; 
   }
   .qr img{
-    width: 5em;
-    height: 5em;
+    width: 4.5em;
+    height: 4.5em;
   }
   .btn_tooltip{
     padding: 0.85rem 1rem; 
@@ -765,12 +769,12 @@ a {cursor: url(../img/cursor2.png), auto}
   }
   
   .web_pg{
-    height: 1400px;
+    height: 1600px;
   }
   .project{
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
   } 
   .project{
     width: 90%;
@@ -917,7 +921,7 @@ a {cursor: url(../img/cursor2.png), auto}
     width: 100%;
   }
   .clone_pg{
-    height: 700px;
+    height: 600px;
   }
   .clone_project{
     width: 90%;
