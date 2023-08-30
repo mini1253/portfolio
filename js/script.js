@@ -1,14 +1,11 @@
-// 메뉴 아래 밑줄 애니메이션
-let horizontalUnderLine = document.getElementById("horizontal-underline");
-let horizontalMenus = document.querySelectorAll("ul.mymenu a");
+//햄버거 메뉴
+$(function(){
+    $('.mobile_menu').click(function(){
+        $('.mobile_bg').toggle();
+    })
+})
 
-horizontalMenus.forEach(menu => menu.addEventListener("mouseover", (e) => horizontalIndicator(e)));
 
-function horizontalIndicator(e) {
-horizontalUnderLine.style.left = e.currentTarget.offsetLeft + "px";
-horizontalUnderLine.style.width = e.currentTarget.offsetWidth + "px";
-horizontalUnderLine.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
-}; 
 //디자인 슬라이드 
 let swiper1 = new Swiper(".mySwiper1", {
     pagination: {
@@ -27,6 +24,7 @@ let swiper1 = new Swiper(".mySwiper1", {
         prevEl: ".swiper-button-prev1",
     },
 });
+
 //디자인 슬라이드 1
 let swiper2 = new Swiper(".mySwiper2", {
     pagination: {
@@ -46,15 +44,5 @@ let swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-//햄버거 메뉴
-$(function(){
-    $('.mobile_menu').click(function(){
-        $('.mobile_bg').toggle();
-    })
-})
 
-$(function(){
-    $('.infoC').click(function(){
-        $('.information').toggle();
-    })
-})
+//
