@@ -1,12 +1,4 @@
-//햄버거 메뉴
-$(function(){
-    $('.mobile_menu').click(function(){
-        $('.mobile_bg').toggle();
-    })
-})
-
-
-//디자인 슬라이드 
+//디자인 슬라이드 1
 let swiper1 = new Swiper(".mySwiper1", {
     pagination: {
         el: ".swiper-pagination-1",
@@ -24,8 +16,7 @@ let swiper1 = new Swiper(".mySwiper1", {
         prevEl: ".swiper-button-prev1",
     },
 });
-
-//디자인 슬라이드 1
+//디자인 슬라이드 2
 let swiper2 = new Swiper(".mySwiper2", {
     pagination: {
         el: ".swiper-pagination-2",
@@ -44,5 +35,9 @@ let swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-
-//
+//햄버거 메뉴
+$(function(){
+    $('.mobile_menu').click(function(){
+        $('.mobile_bg').toggle();
+    })
+})
